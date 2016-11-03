@@ -198,6 +198,9 @@
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="cancel_button_image_alpha">127</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <string name="ARDUINO_MODE">Arduino Mode</string>
+    <string name="COMPUTER_MODE">Computer Mode</string>
+    <string name="CONNECT">Connect</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
@@ -230,8 +233,6 @@
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="app_name">Arduino Telephone Interface</string>
-    <string name="arduino_mode_button">Arduino Mode</string>
-    <string name="computer_mode_button">Computer Mode</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

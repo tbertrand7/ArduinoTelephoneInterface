@@ -15,13 +15,13 @@
     <Button
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="@string/arduino_mode_button"
+            android:text="@string/ARDUINO_MODE"
             android:id="@+id/btnArduinoMode"
             android:onClick="launchArduinoMode" android:textSize="28sp"/>
     <Button
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:text="@string/computer_mode_button"
+            android:text="@string/COMPUTER_MODE"
             android:id="@+id/btnComputerMode"
             android:layout_gravity="center_horizontal"
             android:onClick="launchComputerMode" android:textSize="28sp"/>

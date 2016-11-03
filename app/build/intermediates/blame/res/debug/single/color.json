@@ -20,10 +20,6 @@
         "source": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color\\abc_tint_switch_track.xml"
     },
     {
-        "merged": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_background_cache_hint_selector_material_light.xml",
-        "source": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
-    },
-    {
         "merged": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
         "source": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color\\abc_search_url_text.xml"
     },
@@ -62,10 +58,6 @@
     {
         "merged": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
         "source": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color\\abc_primary_text_material_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_background_cache_hint_selector_material_dark.xml",
-        "source": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
     },
     {
         "merged": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",

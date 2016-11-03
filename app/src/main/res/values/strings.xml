@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Arduino Telephone Interface</string>
-    <string name="arduino_mode_button">Arduino Mode</string>
-    <string name="computer_mode_button">Computer Mode</string>
+    <string name="ARDUINO_MODE">Arduino Mode</string>
+    <string name="COMPUTER_MODE">Computer Mode</string>
+    <string name="CONNECT">Connect</string>
 </resources>

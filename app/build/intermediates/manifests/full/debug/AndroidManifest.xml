@@ -5,8 +5,10 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="12"
         android:targetSdkVersion="24" />
+
+    <uses-feature android:name="android.hardware.usb.host" />
 
     <application
         android:allowBackup="true"
@@ -22,6 +24,13 @@
             </intent-filter>
         </activity>
         <activity android:name="seniordesign.arduinotelephoneinterface.ArduinoMode" >
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
         </activity>
         <activity android:name="seniordesign.arduinotelephoneinterface.ComputerMode" >
         </activity>
