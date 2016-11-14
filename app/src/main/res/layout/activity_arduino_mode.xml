@@ -28,7 +28,8 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:text="@string/DISCONNECT"
-            android:id="@+id/stopButton" android:layout_gravity="center_horizontal" android:textSize="18sp"/>
+            android:id="@+id/btnDisconnect" android:layout_gravity="center_horizontal" android:textSize="18sp"
+            android:onClick="onClickStop" android:clickable="true"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

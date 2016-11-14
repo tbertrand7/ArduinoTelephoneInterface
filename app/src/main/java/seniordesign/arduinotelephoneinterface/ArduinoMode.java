@@ -49,7 +49,7 @@ public class ArduinoMode extends AppCompatActivity {
                 data = new String(arg0, "UTF-8");
                 data.concat("/n");
                 tvAppend(txtResponse, data);
-                sendSMS();
+                sendSMS(data);
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }
@@ -97,6 +97,7 @@ public class ArduinoMode extends AppCompatActivity {
         setContentView(R.layout.activity_arduino_mode);
         usbManager = (UsbManager) getSystemService(this.USB_SERVICE);
         connectButton = (Button) findViewById(R.id.btnConnect);
+        stopButton = (Button) findViewById(R.id.btnDisconnect);
         txtResponse = (TextView) findViewById(R.id.txtArduinoResponse);
         phoneNum = (EditText) findViewById(R.id.phoneNum);
         //sendButton = (Button) findViewById(R.id.buttonSend);
@@ -154,10 +155,10 @@ public class ArduinoMode extends AppCompatActivity {
         tvAppend(txtResponse,"\nSerial Connection Closed! \n");
     }
 
-    private void sendSMS()
+    private void sendSMS(String msg)
     {
         SmsManager smsManager = SmsManager.getDefault();
-        smsManager.sendTextMessage(phoneNum.getText().toString(), null, "Girthy Penis", null, null);
+        smsManager.sendTextMessage(phoneNum.getText().toString(), null, msg, null, null);
         Toast.makeText(getApplicationContext(), "SMS sent.", Toast.LENGTH_LONG).show();
     }
 
