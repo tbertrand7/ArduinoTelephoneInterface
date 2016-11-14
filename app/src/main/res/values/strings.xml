@@ -3,4 +3,5 @@
     <string name="ARDUINO_MODE">Arduino Mode</string>
     <string name="COMPUTER_MODE">Computer Mode</string>
     <string name="CONNECT">Connect</string>
+    <string name="DISCONNECT">Disconnect</string>
 </resources>

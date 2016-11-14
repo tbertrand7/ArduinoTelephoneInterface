@@ -24,6 +24,11 @@
             android:text="@string/CONNECT"
             android:id="@+id/btnConnect" android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"
             android:clickable="true" android:textSize="18sp" android:onClick="connect"/>
+    <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="@string/DISCONNECT"
+            android:id="@+id/stopButton" android:layout_gravity="center_horizontal" android:textSize="18sp"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
