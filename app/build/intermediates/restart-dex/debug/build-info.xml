@@ -4,26 +4,26 @@
     api-level="23"
     density="xxxhdpi"
     format="7"
-    timestamp="512716136599289" >
+    timestamp="515459682078702" >
 
     <task
         name="javac"
-        duration="356" />
+        duration="254" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="38" />
+        duration="321" />
     <task
         name="verifier"
-        duration="5" />
+        duration="100" />
 
     <artifact
         location="C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="512716136599289" >
+    <build timestamp="515459682078702" >
         <artifact
             location="C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
