@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:2:1-35:12
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:2:1-42:12
 	package
 		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:3:11-59
 		INJECTED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\Andr
 	android:name
 		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:9:22-67
 application
-ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:12:5-34:19
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:12:5-41:19
 MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
@@ -93,6 +93,16 @@ activity#seniordesign.arduinotelephoneinterface.ComputerMode
 ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:32:9-33:20
 	android:name
 		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:32:19-47
+receiver#seniordesign.arduinotelephoneinterface.SmsReceiver
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:35:9-40:20
+	android:name
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:35:19-46
+intent-filter#android.provider.Telephony.SMS_RECEIVED
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:36:13-39:29
+action#android.provider.Telephony.SMS_RECEIVED
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:37:17-38:77
+	android:name
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:37:25-113
 uses-sdk
 INJECTED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:21:5-23:78

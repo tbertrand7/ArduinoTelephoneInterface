@@ -26,8 +26,8 @@ import com.felhr.usbserial.UsbSerialDevice;
 import com.felhr.usbserial.UsbSerialInterface;
 
 import java.io.UnsupportedEncodingException;
-import java.util.HashMap;
-import java.util.Map;
+import java.text.*;
+import java.util.*;
 
 public class ArduinoMode extends AppCompatActivity {
     private static final int MY_PERMISSIONS_REQUEST_SEND_SMS = 0;
@@ -39,22 +39,39 @@ public class ArduinoMode extends AppCompatActivity {
     private UsbDevice device;
     private UsbSerialDevice serialPort;
     private UsbDeviceConnection connection;
-    private String data;
+    private StringBuffer msgData = new StringBuffer();
 
     UsbSerialInterface.UsbReadCallback mCallback = new UsbSerialInterface.UsbReadCallback() { //Defining a Callback which triggers whenever data is read.
         @Override
         public void onReceivedData(byte[] arg0) {
-            data = null;
+            String data = null;
             try {
                 data = new String(arg0, "UTF-8");
-                data.concat("/n");
+                createMsg(data.trim());
                 tvAppend(txtResponse, data);
-                sendSMS(data);
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }
         }
     };
+
+    private void createMsg(String data)
+    {
+        if (data != null && !data.equals("")) {
+            msgData.append(data);
+
+            if (msgData.toString().contains("LEAD") || msgData.toString().contains("LAG")) {
+                msgData.append(",");
+                msgData.append((new SimpleDateFormat("hh:mm:ss aa").format(Calendar.getInstance().getTime())));
+                try {
+                    sendSMS(msgData.toString());
+                    msgData = new StringBuffer();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 
     private final BroadcastReceiver broadcastReceiver = new BroadcastReceiver() { //Broadcast Receiver to automatically start and stop the Serial connection.
         @Override
@@ -72,7 +89,7 @@ public class ArduinoMode extends AppCompatActivity {
                             serialPort.setParity(UsbSerialInterface.PARITY_NONE);
                             serialPort.setFlowControl(UsbSerialInterface.FLOW_CONTROL_OFF);
                             serialPort.read(mCallback);
-                            tvAppend(txtResponse, "Serial Connection Opened!\n");
+                            Toast.makeText(getApplication(),"Serial Connection Opened!", Toast.LENGTH_SHORT).show();
 
                         } else {
                             Log.d("SERIAL", "PORT NOT OPEN");
@@ -83,8 +100,8 @@ public class ArduinoMode extends AppCompatActivity {
                 } else {
                     Log.d("SERIAL", "PERM NOT GRANTED");
                 }
-            } else if (intent.getAction().equals(UsbManager.ACTION_USB_DEVICE_ATTACHED)) {
-                connect(connectButton);
+//            } else if (intent.getAction().equals(UsbManager.ACTION_USB_DEVICE_ATTACHED)) {
+//                connect(connectButton);
             } else if (intent.getAction().equals(UsbManager.ACTION_USB_DEVICE_DETACHED)) {
                 onClickStop(stopButton);
             }
@@ -121,24 +138,29 @@ public class ArduinoMode extends AppCompatActivity {
 
     /* Connect to Arduino Device */
     public void connect(View view) {
-        HashMap<String, UsbDevice> usbDevices = usbManager.getDeviceList();
-        if (!usbDevices.isEmpty()) {
-            boolean keep = true;
-            for (Map.Entry<String, UsbDevice> entry : usbDevices.entrySet()) {
-                device = entry.getValue();
-                int deviceVID = device.getVendorId();
-                if (deviceVID == 0x2341)//Arduino Vendor ID
-                {
-                    PendingIntent pi = PendingIntent.getBroadcast(this, 0, new Intent(ACTION_USB_PERMISSION), 0);
-                    usbManager.requestPermission(device, pi);
-                    keep = false;
-                } else {
-                    connection = null;
-                    device = null;
-                }
+        if (phoneNum.getText().toString().equals("")) {
+            Toast.makeText(getApplication(), "Please enter a phone number", Toast.LENGTH_SHORT).show();
+        } else {
+            phoneNum.setEnabled(false);
+            HashMap<String, UsbDevice> usbDevices = usbManager.getDeviceList();
+            if (!usbDevices.isEmpty()) {
+                boolean keep = true;
+                for (Map.Entry<String, UsbDevice> entry : usbDevices.entrySet()) {
+                    device = entry.getValue();
+                    int deviceVID = device.getVendorId();
+                    if (deviceVID == 0x2341)//Arduino Vendor ID
+                    {
+                        PendingIntent pi = PendingIntent.getBroadcast(this, 0, new Intent(ACTION_USB_PERMISSION), 0);
+                        usbManager.requestPermission(device, pi);
+                        keep = false;
+                    } else {
+                        connection = null;
+                        device = null;
+                    }
 
-                if (!keep)
-                    break;
+                    if (!keep)
+                        break;
+                }
             }
         }
     }
@@ -152,14 +174,28 @@ public class ArduinoMode extends AppCompatActivity {
 
     public void onClickStop(View view) {
         serialPort.close();
-        tvAppend(txtResponse,"\nSerial Connection Closed! \n");
+        phoneNum.setEnabled(true);
+        Toast.makeText(getApplication(),"Serial Connection Closed!", Toast.LENGTH_SHORT).show();
     }
 
+    @SuppressWarnings("deprecation")
     private void sendSMS(String msg)
     {
-        SmsManager smsManager = SmsManager.getDefault();
-        smsManager.sendTextMessage(phoneNum.getText().toString(), null, msg, null, null);
-        Toast.makeText(getApplicationContext(), "SMS sent.", Toast.LENGTH_LONG).show();
+        final String fmsg = msg;
+
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.SEND_SMS)
+                == PackageManager.PERMISSION_GRANTED && msg != null) {
+
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    SmsManager smsManager = SmsManager.getDefault();
+                    smsManager.sendTextMessage(phoneNum.getText().toString(), null, fmsg, null, null);
+                    //Toast.makeText(getApplicationContext(), "SMS sent", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
     }
 
     private void tvAppend(TextView tv, CharSequence text) {

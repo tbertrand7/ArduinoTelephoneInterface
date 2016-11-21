@@ -36,9 +36,15 @@
             android:ems="10"
             android:id="@+id/phoneNum" android:layout_gravity="center_horizontal"
             android:text="7243962399" android:inputType="phone"/>
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/txtArduinoResponse" android:layout_gravity="center_horizontal"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/txtArduinoResponse" android:layout_gravity="center_horizontal"
+        />
+    </ScrollView>
 </LinearLayout>

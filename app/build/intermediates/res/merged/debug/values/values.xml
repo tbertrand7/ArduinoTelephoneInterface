@@ -201,6 +201,7 @@
     <string name="ARDUINO_MODE">Arduino Mode</string>
     <string name="COMPUTER_MODE">Computer Mode</string>
     <string name="CONNECT">Connect</string>
+    <string name="DISCONNECT">Disconnect</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
     <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>

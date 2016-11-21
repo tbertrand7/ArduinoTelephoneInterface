@@ -40,6 +40,12 @@
         </activity>
         <activity android:name="seniordesign.arduinotelephoneinterface.ComputerMode" >
         </activity>
+
+        <receiver android:name="seniordesign.arduinotelephoneinterface.SmsReceiver" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

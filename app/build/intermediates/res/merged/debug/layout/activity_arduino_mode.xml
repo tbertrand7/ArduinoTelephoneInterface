@@ -24,15 +24,27 @@
             android:text="@string/CONNECT"
             android:id="@+id/btnConnect" android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"
             android:clickable="true" android:textSize="18sp" android:onClick="connect"/>
+    <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="@string/DISCONNECT"
+            android:id="@+id/btnDisconnect" android:layout_gravity="center_horizontal" android:textSize="18sp"
+            android:onClick="onClickStop" android:clickable="true"/>
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:id="@+id/phoneNum" android:layout_gravity="center_horizontal"
             android:text="7243962399" android:inputType="phone"/>
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/txtArduinoResponse" android:layout_gravity="center_horizontal"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/txtArduinoResponse" android:layout_gravity="center_horizontal"
+        />
+    </ScrollView>
 </LinearLayout>
