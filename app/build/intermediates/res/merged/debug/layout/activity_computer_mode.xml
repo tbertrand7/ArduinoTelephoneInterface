@@ -11,6 +11,9 @@
         android:layout_height="match_parent"
         tools:context="seniordesign.arduinotelephoneinterface.ComputerMode">
 
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:ems="10"
+              android:id="@+id/recPhoneNum" android:layout_gravity="center_horizontal" android:text="8103605944"
+              android:inputType="phone"/>
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"

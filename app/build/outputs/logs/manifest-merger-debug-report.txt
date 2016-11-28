@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:2:1-35:12
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:2:1-34:12
 	package
 		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:3:11-59
 		INJECTED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml
@@ -18,15 +18,19 @@ ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\Andr
 	android:name
 		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:5:19-59
 uses-permission#android.permission.SEND_SMS
-ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:7:5-8:23
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:7:5-67
 	android:name
 		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:7:22-64
 uses-permission#android.permission.RECEIVE_SMS
-ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:9:5-10:23
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:8:5-70
 	android:name
-		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:9:22-67
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:8:22-67
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:9:22-78
 application
-ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:12:5-34:19
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:11:5-33:19
 MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
@@ -50,49 +54,49 @@ MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\Tom\I
 MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:23:5-20
 MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:15:13-45
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:14:13-45
 	android:supportsRtl
-		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:16:13-39
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:15:13-39
 	android:allowBackup
-		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:13:13-39
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:12:13-39
 	android:icon
-		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:14:13-47
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:13:13-47
 	android:theme
-		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:17:13-44
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:16:13-44
 activity#seniordesign.arduinotelephoneinterface.ModeSelect
-ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:18:9-24:20
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:17:9-23:20
 	android:name
-		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:18:19-45
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:17:19-45
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:18:13-22:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:20:17-68
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:19:17-68
 	android:name
-		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:19:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:22:17-76
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:21:17-76
 	android:name
-		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:21:27-74
 activity#seniordesign.arduinotelephoneinterface.ArduinoMode
-ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:25:9-31:20
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:24:9-30:20
 	android:name
-		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:25:19-46
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:24:19-46
 intent-filter#android.hardware.usb.action.USB_DEVICE_ATTACHED
-ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:26:13-28:29
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:25:13-27:29
 action#android.hardware.usb.action.USB_DEVICE_ATTACHED
-ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:27:17-90
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:26:17-90
 	android:name
-		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:27:25-87
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:26:25-87
 meta-data#android.hardware.usb.action.USB_DEVICE_ATTACHED
-ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:29:13-30:64
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:28:13-29:64
 	android:resource
-		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:30:24-61
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:29:24-61
 	android:name
-		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:29:24-86
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:28:24-86
 activity#seniordesign.arduinotelephoneinterface.ComputerMode
-ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:32:9-33:20
+ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:31:9-32:20
 	android:name
-		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:32:19-47
+		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:31:19-47
 uses-sdk
 INJECTED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:21:5-23:78

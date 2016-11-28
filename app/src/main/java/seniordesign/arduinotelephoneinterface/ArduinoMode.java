@@ -41,6 +41,8 @@ public class ArduinoMode extends AppCompatActivity {
     private UsbDeviceConnection connection;
     private StringBuffer msgData = new StringBuffer();
 
+    private boolean isFirst = true;
+
     UsbSerialInterface.UsbReadCallback mCallback = new UsbSerialInterface.UsbReadCallback() { //Defining a Callback which triggers whenever data is read.
         @Override
         public void onReceivedData(byte[] arg0) {
@@ -54,24 +56,6 @@ public class ArduinoMode extends AppCompatActivity {
             }
         }
     };
-
-    private void createMsg(String data)
-    {
-        if (data != null && !data.equals("")) {
-            msgData.append(data);
-
-            if (msgData.toString().contains("LEAD") || msgData.toString().contains("LAG")) {
-                msgData.append(",");
-                msgData.append((new SimpleDateFormat("hh:mm:ss aa").format(Calendar.getInstance().getTime())));
-                try {
-                    sendSMS(msgData.toString());
-                    msgData = new StringBuffer();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-    }
 
     private final BroadcastReceiver broadcastReceiver = new BroadcastReceiver() { //Broadcast Receiver to automatically start and stop the Serial connection.
         @Override
@@ -134,6 +118,8 @@ public class ArduinoMode extends AppCompatActivity {
                         MY_PERMISSIONS_REQUEST_SEND_SMS);
             }
         }
+
+        isFirst = true;
     }
 
     /* Connect to Arduino Device */
@@ -160,6 +146,31 @@ public class ArduinoMode extends AppCompatActivity {
 
                     if (!keep)
                         break;
+                }
+            }
+        }
+    }
+
+    private void createMsg(String data)
+    {
+        if (data != null && !data.equals("")) {
+            msgData.append(data);
+
+            if (msgData.toString().contains("LEAD") || msgData.toString().contains("LAG")) {
+                msgData.append(",");
+                msgData.append((new SimpleDateFormat("hh:mm:ss aa").format(Calendar.getInstance().getTime())));
+
+                if (isFirst) {
+                    msgData = new StringBuffer();
+                    isFirst = false;
+                }
+                else {
+                    try {
+                        sendSMS(msgData.toString());
+                        msgData = new StringBuffer();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                 }
             }
         }

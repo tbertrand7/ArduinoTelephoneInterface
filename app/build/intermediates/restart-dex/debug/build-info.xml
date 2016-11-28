@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="23"
-    density="xxxhdpi"
+    abi="armeabi-v7a,armeabi"
+    api-level="21"
+    density="xxhdpi"
     format="7"
-    timestamp="515459682078702" >
+    timestamp="56123115863026" >
 
     <task
         name="javac"
-        duration="254" />
+        duration="358" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="321" />
+        duration="202" />
     <task
         name="verifier"
-        duration="100" />
+        duration="140" />
 
     <artifact
         location="C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="515459682078702" >
+    <build timestamp="56123115863026" >
         <artifact
             location="C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
