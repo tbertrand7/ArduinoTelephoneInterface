@@ -35,24 +35,11 @@ MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Tom\IdeaProjects\
 MERGED from [com.android.support:support-v4:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\src\main\AndroidManifest.xml:14:13-45
 	android:supportsRtl
@@ -103,24 +90,11 @@ MERGED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Tom\IdeaProjects\
 MERGED from [com.android.support:support-v4:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:animated-vector-drawable:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-compat:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:24.2.1] C:\Users\Tom\IdeaProjects\ArduinoTelephoneInterface\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion

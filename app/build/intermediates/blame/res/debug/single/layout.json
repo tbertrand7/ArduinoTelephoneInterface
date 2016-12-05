@@ -20,12 +20,12 @@
         "source": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
-        "source": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
-    },
-    {
         "merged": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
         "source": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "C:\\Users\\Tom\\IdeaProjects\\ArduinoTelephoneInterface\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
