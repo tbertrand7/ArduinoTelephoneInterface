@@ -73,7 +73,7 @@ public class ArduinoMode extends AppCompatActivity {
                             serialPort.setParity(UsbSerialInterface.PARITY_NONE);
                             serialPort.setFlowControl(UsbSerialInterface.FLOW_CONTROL_OFF);
                             serialPort.read(mCallback);
-                            Toast.makeText(getApplication(),"Serial Connection Opened!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplication(), "Serial Connection Opened!", Toast.LENGTH_SHORT).show();
 
                         } else {
                             Log.d("SERIAL", "PORT NOT OPEN");
@@ -84,8 +84,6 @@ public class ArduinoMode extends AppCompatActivity {
                 } else {
                     Log.d("SERIAL", "PERM NOT GRANTED");
                 }
-//            } else if (intent.getAction().equals(UsbManager.ACTION_USB_DEVICE_ATTACHED)) {
-//                connect(connectButton);
             } else if (intent.getAction().equals(UsbManager.ACTION_USB_DEVICE_DETACHED)) {
                 onClickStop(stopButton);
             }
@@ -176,11 +174,11 @@ public class ArduinoMode extends AppCompatActivity {
         }
     }
 
+    /* Send data to Arduino through serial USB */
     public void onClickSend(View view) {
         //String string = editText.getText().toString();
         //serialPort.write(string.getBytes());
         //tvAppend(txtResponse, "\nData Sent : " + string + "\n");
-
     }
 
     public void onClickStop(View view) {

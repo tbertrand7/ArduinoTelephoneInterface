@@ -28,23 +28,20 @@ public class ComputerMode extends AppCompatActivity {
             //---get the SMS message passed in---
             Bundle bundle = intent.getExtras();
             SmsMessage[] msgs = null;
-            if (bundle != null)
-            {
+            if (bundle != null) {
                 //---retrieve the SMS message received---
                 Object[] pdus = (Object[]) bundle.get("pdus");
                 msgs = new SmsMessage[pdus.length];
-                for (int i=0; i<msgs.length; i++){
-                    msgs[i] = SmsMessage.createFromPdu((byte[])pdus[i]);
-                    if (msgs[i].getOriginatingAddress().contains(phoneNumber.getText()))
-                    {
+                for (int i = 0; i < msgs.length; i++) {
+                    msgs[i] = SmsMessage.createFromPdu((byte[]) pdus[i]);
+                    if (msgs[i].getOriginatingAddress().contains(phoneNumber.getText())) {
                         String msg = msgs[i].getMessageBody().toString();
                         String[] data = msg.split(",");
 
                         writeToCSV(data);
 
                         StringBuilder dataStr = new StringBuilder();
-                        for (int j=0; j < data.length; j++)
-                        {
+                        for (int j = 0; j < data.length; j++) {
                             dataStr.append(data[j] + "|");
                         }
                         dataStr.append("\n");
@@ -67,8 +64,6 @@ public class ComputerMode extends AppCompatActivity {
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.setPriority(999);
         intentFilter.addAction("android.provider.Telephony.SMS_RECEIVED");
-        //intentFilter.addDataScheme("sms");
-        //intentFilter.addDataAuthority("*", "6734");
         registerReceiver(smsReceiver, intentFilter);
 
         //Request permissions for file writing
